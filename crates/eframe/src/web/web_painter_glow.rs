@@ -55,7 +55,7 @@ impl WebPainter for WebPainterGlow {
             self.painter.set_texture(*id, image_delta);
         }
 
-        egui_glow::painter::clear(self.painter.gl(), canvas_dimension, clear_color);
+        // egui_glow::painter::clear(self.painter.gl(), canvas_dimension, clear_color);
         self.painter
             .paint_primitives(canvas_dimension, pixels_per_point, clipped_primitives);
 
